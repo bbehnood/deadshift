@@ -1,0 +1,17 @@
+[package]
+name = "deadshift"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/bbehnood/deadshift"
+readme = "README.md"
+
+[dependencies]
+avian2d = "0.8"
+bevy = "0.20"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
